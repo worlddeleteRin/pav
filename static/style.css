@@ -538,14 +538,12 @@ body {
   }
   .product__page__container__image {
     max-height: 400px;
-    height: 100%;
     max-width: 80%;
     max-height: 500px;
   }
   .product__page__container__image img {
     max-height: 400px;
     object-fit: contain;
-    height: 100%;
     width: 100%;
     max-width: 700px;
   }
@@ -700,7 +698,7 @@ body {
   justify-content: center;
 }
 .mobile__menu__main__container__menu__item {
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px 30px 0px;
 }
 .mobile__menu__main__container__menu__item a {
   text-decoration: none;
