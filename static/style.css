@@ -962,7 +962,6 @@ body {
   color: white;
   font-family: "gpro-text-medium";
   font-size: 18px;
-  padding: 0px 35px;
   transition: all 0.2s;
 }
 .pform__container__form .pform__button:hover {
@@ -976,7 +975,7 @@ body {
 }
 @media (max-width: 423px) {
   .pform__button {
-    padding: 0px;
+    padding: 0px 0px;
   }
 }
 .pform__wrap__wrapper {
