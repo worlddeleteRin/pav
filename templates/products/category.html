@@ -1,0 +1,39 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="subpage__title">
+    <span>
+     {{ category.name }}
+    </span>
+</div>
+
+
+
+
+<div class="items__list">
+
+    {% for item in items  %}
+        <div class="items__list__item">
+        {% include './blocks/single_item.html' %}
+        </div>
+    {% endfor %}
+
+</div>
+
+{% include './blocks/cost_1.html' %}
+
+
+<script>
+    //$(document).ready(function() {
+        $(".header__main__wrapper").addClass("sub")
+    //})
+</script>
+
+{% endblock content %}
+
+
+
+
+
+

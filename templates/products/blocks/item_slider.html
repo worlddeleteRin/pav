@@ -1,0 +1,118 @@
+{% load static %}
+
+<div class="items__slider__container__main__wrapper">
+
+
+<div class="category__blocks__title proposition_title">
+    <span>
+    Наши предложения
+    </span>
+</div>
+
+<div class="items__slider__container" id="items__slider__3">
+    <div class="items__slider__3 items__slider__wrapper">
+    {% for item in items  %}
+        <div class="single__item__main__wrapper">
+            {% include './single_item.html' %}
+        </div>
+    {% endfor %} 
+    </div>
+    <span class="prev_1" id="prev_3">
+        <i class="gg-chevron-left"></i>
+    </span>
+    <span class="next_1" id="next_3">
+        <i class="gg-chevron-right"></i>
+    </span> 
+</div>
+
+
+<div class="items__slider__container" id="items__slider__2">
+    <div class="items__slider__2 items__slider__wrapper">
+        {% for item in items  %}
+        <div class="single__item__main__wrapper">
+            {% include './single_item.html' %}
+        </div>
+    {% endfor %} 
+    </div>
+    <span class="prev_1" id="prev_2">
+        <i class="gg-chevron-left"></i>
+    </span>
+    <span class="next_1" id="next_2">
+        <i class="gg-chevron-right"></i>
+    </span> 
+</div>
+
+<div class="items__slider__container" id="items__slider__1">
+    <div class="items__slider__1 items__slider__wrapper">
+        {% for item in items  %}
+        <div class="single__item__main__wrapper">
+            {% include './single_item.html' %}
+        </div>
+    {% endfor %} 
+    </div>
+    <span class="prev_1" id="prev_1">
+        <i class="gg-chevron-left"></i>
+    </span>
+    <span class="next_1" id="next_1">
+        <i class="gg-chevron-right"></i>
+    </span> 
+</div>
+
+
+</div>
+
+
+
+<script>
+$(document).ready(function() {
+    
+    $('.items__slider__3').slick({
+        //slide: 'div',
+        slidesToScroll: 3,
+        slidesToShow: 3,
+        mobileFirst: true,
+        dots: true,
+        infinite: true,
+        cssEase: 'ease',
+        swipe: true,
+        arrows: true,
+        autoplay: true,
+        autoplayspeed: 1000,
+        lazyLoad: 'ondemand',
+       prevArrow: $('#prev_3'),
+       nextArrow: $('#next_3'),
+    });
+    $('.items__slider__2').slick({
+        //slide: 'div',
+        slidesToScroll: 2,
+        slidesToShow: 2,
+        mobileFirst: true,
+        dots: true,
+        infinite: true,
+        cssEase: 'ease',
+        swipe: true,
+        arrows: true,
+        autoplay: true,
+        autoplayspeed: 1000,
+        lazyLoad: 'ondemand',
+       prevArrow: $('#prev_2'),
+       nextArrow: $('#next_2'),
+    });
+    $('.items__slider__1').slick({
+        //slide: 'div',
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        mobileFirst: true,
+        dots: true,
+        infinite: true,
+        cssEase: 'ease',
+        swipe: true,
+        arrows: true,
+        autoplay: true,
+        autoplayspeed: 1000,
+        lazyLoad: 'ondemand',
+       prevArrow: $('#prev_1'),
+       nextArrow: $('#next_1'),
+    });
+});
+</script>

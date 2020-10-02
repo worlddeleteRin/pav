@@ -1,0 +1,105 @@
+{% extends './base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<div class="product__page__wrapper">
+    <div class="product__page__container">
+        <div class="product__page__container__image">
+            <img src="{% static 'images/products/' %}{{ item.imgurl }}"
+             alt="">
+        </div>
+        <div class="product__page__container__info">
+           <span class="product__page__container__info__name">
+                {{ item.name }}
+           </span>
+           <span class="product__page__container__info__category">
+                {{ item.category.name }}
+           </span>
+           <span class="product__page__container__info__price">
+           от 
+            <span>
+                {{ item.price }}
+            </span>
+           </span>
+           <div class="call__button__1">
+                <span class="#call__button__1">
+                Заказать звонок
+                </span>
+           </div>
+           <div class="product__page__container__info__features">
+                <div class="product__page__container__info__features__title">
+                    <span>
+                        Характеристики
+                    </span>
+                </div>
+                <div class="product__page__container__info__features__item">
+                    Размер:
+                        <span>
+                            {{ item.size }}
+                        </span>
+                    </div>
+                <div class="product__page__container__info__features__item">
+                    Внутренняя высота:
+                        <span>
+                            {{ item.h_in }}
+                        </span>
+                    </div>
+                <div class="product__page__container__info__features__item">
+                    Внешняя высота:
+                        <span>
+                            {{ item.h_out }}
+                        </span>
+                </div>
+                <div class="product__page__container__info__features__item">
+                    Экстерьер:
+                        <span>
+                            {{ item.eksterier }}
+                        </span>
+                </div>
+                <div class="product__page__container__info__features__item">
+                    Интерьер:
+                        <span>
+                            {{ item.interier }}
+                        </span>
+                </div>
+                <div class="product__page__container__info__features__item">
+                    Двери, Окна:
+                        <span>
+                            {{ item.doors }}
+                        </span>
+                </div>
+                <div class="product__page__container__info__features__item">
+                    Пол:
+                        <span>
+                            {{ item.floor }}
+                        </span>
+                </div>
+                <div class="product__page__container__info__features__item">
+                    Электрика:
+                        <span>
+                            {{ item.electrik }}
+                        </span>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    //$(document).ready(function() {
+        $(".header__main__wrapper").addClass("sub");
+
+
+        $(".call__button__1 span").click(function() {
+        showModal();
+        })
+    //})
+</script>
+{% endblock content %}
+
+
+

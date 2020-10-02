@@ -1,0 +1,28 @@
+{% load static %}
+
+<div class="category__blocks">
+    <div class="category__blocks__title" id="catalog">
+    <span>
+        Каталог
+        </span>
+    </div>
+    <div class="category__blocks__items">
+
+        {% for category in categories  %}
+        
+         <a class="category__blocks__item"
+         href="{% url 'products:category' category.id %}">
+         <div class="category__blocks__item__darken">
+         </div>
+            <img src="{% static 'images/products/' %}{{category.imgurl}}" 
+            alt="">
+            <span>
+                {{ category.name }}
+            </span>
+        </a>
+
+        {% endfor %}
+
+       
+    </div>
+</div>

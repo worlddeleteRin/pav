@@ -1,0 +1,97 @@
+<div class="header__main__wrapper">
+    <div class="header__main__container">
+        <div class="header__main__container__logo">
+            <!-- <img src="https://placehold.it/400x400" alt=""> -->
+            <a href="{% url 'products:index' %}">
+                Название компании
+            </a>
+        </div>
+
+        <div class="mobile__menu__button">
+            <i class="gg-close mobile__close__icon__2"></i>
+            <i class="gg-menu-boxed mobile__close__icon__1"></i>
+            
+        </div>
+        <div class="header__main__container__items">
+            <div class="header__main__container__item">
+                <a href="{% url 'products:index' %}">
+                    Главная 
+                </a>
+            </div>
+            <div class="header__main__container__item">
+                <a href="{% url 'products:index' %}#catalog">
+                   Каталог 
+                </a>
+            </div>
+            <div class="header__main__container__item">
+                <a href="{% url 'products:index' %}#aboutus"> 
+                   О Нас 
+                </a>
+            </div>
+            <div class="header__main__container__item">
+                <a href="{% url 'products:index' %}#ourcontacts">
+                   Контакты
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="mobile__menu__main">
+    <div class="mobile__menu__main__container">
+        <div class="mobile__menu__main__container__menu">
+            <div class="mobile__menu__main__container__menu__item">
+                <a
+                href="{% url 'products:index' %}">
+                    Главная
+                </a>
+            </div>
+            <div class="mobile__menu__main__container__menu__item">
+                <a
+                href="{% url 'products:index' %}#catalog">
+                    Каталог
+                </a>
+            </div>
+            <div class="mobile__menu__main__container__menu__item">
+                <a
+                href="{% url 'products:index' %}#aboutus">
+                    О Нас
+                </a>
+            </div>
+            <div class="mobile__menu__main__container__menu__item">
+                <a
+                href="{% url 'products:index' %}#ourcontacts">
+                    Контакты
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- <i class="gg-close mobile__menu__main__close"></i> -->
+</div>
+
+<div class="mobile__menu__main__wrapper">
+
+</div>
+
+
+<script>
+    $('.mobile__menu__main__container__menu__item a').click(function() {
+        $(".mobile__menu__main").removeClass("show")
+        $(".mobile__close__icon__1").removeClass("show")
+        $(".mobile__close__icon__2").removeClass("show")
+        $(".mobile__menu__main__wrapper").removeClass("show")
+    })
+    $(".mobile__menu__button").click(function() {
+        $(".mobile__menu__main").toggleClass("show")
+        $(".mobile__close__icon__1").toggleClass("show")
+        $(".mobile__close__icon__2").toggleClass("show")
+        $(".mobile__menu__main__wrapper").toggleClass("show")
+    })
+    $(".mobile__menu__main__wrapper").click(function() {
+        $(".mobile__menu__main").removeClass("show")
+        $(".mobile__close__icon__1").removeClass("show")
+        $(".mobile__close__icon__2").removeClass("show")
+        $(".mobile__menu__main__wrapper").removeClass("show")
+    })
+</script>

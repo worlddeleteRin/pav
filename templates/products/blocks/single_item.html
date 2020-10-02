@@ -1,0 +1,29 @@
+{% load static %}
+
+<div class="single__item">
+    <a class="single__item__image"
+    href="{% url 'products:item' item.id %}">
+        <img src="{% static 'images/products/' %}{{item.imgurl}}" 
+        alt="">
+    </a>
+    <div class="single__item__info">
+        <span class="single__item__info__category">
+        {{ item.category.name }}
+        </span> 
+        <a class="single__item__info__name"
+        href = "{% url 'products:item' item.id %}">
+        {{ item.name }}
+        </a> 
+        <span class="single__item__info__price">
+        от 
+        <span>
+        {{ item.price }}
+        </span>
+        </span> 
+    </div>
+    <a class="single__item__button"
+    href="{% url 'products:item' item.id %}">
+        Подробнее
+    </a>
+</div>
+
