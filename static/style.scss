@@ -605,13 +605,15 @@ body {
         justify-items: center;
         align-content: center;
         &__image {
-            max-height: 400px;
-            max-width: 80%;
-            max-height: 500px;
+            min-height: 400px;
+            max-width: 90%;
+            height: 100%;
             // max-width: 750px;
             img {
+                height: 100%;
+                min-height: 400px;
                 max-height: 400px;
-                object-fit: contain;
+                object-fit: cover;
                 width: 100%;
                 max-width: 700px;
             }
