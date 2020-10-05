@@ -8,8 +8,25 @@
 <div class="product__page__wrapper">
     <div class="product__page__container">
         <div class="product__page__container__image">
-            <img src="{% static 'images/products/' %}{{ item.imgurl }}"
+
+            <div class="product__page__container__image__toslide">
+            
+            {% for img in item.itemimage_set.all  %}
+            
+            <img src="{% static 'images/products/' %}{{ img.imgurl }}"
              alt="">
+
+             {% endfor %}
+             </div>
+             <span class="prev_1_1" id="prev_1">
+                <i class="gg-chevron-left"></i>
+            </span>
+            <span class="next_1_1" id="next_1">
+                <i class="gg-chevron-right"></i>
+            </span> 
+
+    </span> 
+
         </div>
         <div class="product__page__container__info">
            <span class="product__page__container__info__name">
@@ -90,6 +107,25 @@
 
 
 <script>
+
+    $(document).ready(function() {
+            $('.product__page__container__image__toslide').slick({
+            //slide: 'div',
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            mobileFirst: true,
+            dots: false,
+            infinite: true,
+            cssEase: 'ease',
+            swipe: true,
+            arrows: true,
+            autoplay: true,
+            autoplayspeed: 1000,
+            lazyLoad: 'ondemand',
+        prevArrow: $('#prev_1'),
+        nextArrow: $('#next_1'),
+        });
+    })
     //$(document).ready(function() {
         $(".header__main__wrapper").addClass("sub");
 

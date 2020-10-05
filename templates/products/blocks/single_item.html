@@ -1,10 +1,14 @@
 {% load static %}
+{% load extras %}
 
 <div class="single__item">
     <a class="single__item__image"
     href="{% url 'products:item' item.id %}">
-        <img src="{% static 'images/products/' %}{{item.imgurl}}" 
+
+        {% get_first_image item as item_img %}
+        <img src="{% static 'images/products/'%}{{item_img.imgurl}}" 
         alt="">
+
     </a>
     <div class="single__item__info">
         <span class="single__item__info__category">

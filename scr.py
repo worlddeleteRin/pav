@@ -33,23 +33,18 @@ def createProducts():
         doors = item['doors']
         floor = item['floor']
         electrik = item['electrik']
-        imgurl = item['imgurl']
+        
         category_imgurl = item['category_imgurl']
-        for dire, file, item in os.walk(products_img_path):
-            for i in item:
-                i_norm = i.split('.')[0]
-                if str(imgurl) == str(i_norm):
-                    print('it passed')
-                    item_name = i
-                    imgurl = item_name
+
         category = Category.objects.get_or_create(
             name = category_name,
             imgurl = category_imgurl,
         )[0]
+
         print(category.id, category.name)
-        print(imgurl)
         print(price, type(price))
-        item = Item(
+
+        new_item = Item(
             category = category,
             name = name,
             price = price,
@@ -61,11 +56,48 @@ def createProducts():
             doors = doors,
             floor = floor,
             electrik = electrik,
-            imgurl = imgurl, 
         )
-        print(item)
-        item.save()
-        print(item.name, 'created')
+        new_item.save()
+
+        imgurl = item['imgurl']
+        if type(imgurl) == str:
+            imgurl = imgurl.split(',')
+
+
+        for dire, file, item in os.walk(products_img_path):
+            for i in item:
+                i_norm = i.split('.')[0]
+                if type(imgurl) == list:
+                    print('find list variable')
+                    print(imgurl)
+                    for im in imgurl:
+                        im = str(im)
+                        im = im.strip()
+                        print('subimage', im)
+                        if im == str(i_norm):
+                            print('cool, it passed')
+                            print('it passed', im)
+                            item_name = i
+                            new_imgurl = item_name
+                            new_item_image = Itemimage(
+                                item = new_item,
+                                imgurl = new_imgurl,
+                            )
+                            print('new item image is:')
+                            new_item_image.save()
+                            # print(new_item_image)
+                else:
+                    if str(imgurl).strip() == str(i_norm):
+                            print('it passed', imgurl)
+                            item_name = i
+                            imgurl = item_name
+                            new_item_image = Itemimage(
+                                item = new_item,
+                                imgurl = imgurl,
+                            )
+                            new_item_image.save()
+
+        
         print('his index was', index)
     print('created', index, 'products')
 

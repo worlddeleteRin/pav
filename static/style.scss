@@ -170,10 +170,48 @@ body {
         left: 15;
     }
 }
+.prev_1_1 {
+    position: absolute;
+    top: 50%;
+    left: 5;
+    background-color: $main-color;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    &:hover {
+        background-color: $main-color-hover;
+    }
+    i {
+        color: white;
+        transform: scale(1.4);
+    }
+    @media (max-width: 1060px) {
+        left: 15;
+    }
+}
 .next_1 {
     position: absolute;
     top: 50%;
     right: 35;
+    background-color: $main-color;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    &:hover {
+        background-color: $main-color-hover;
+    }
+    i {
+        color: white;
+        transform: scale(1.4);
+    }
+    @media (max-width: 1060px) {
+        right: 15;
+    }
+}
+.next_1_1 {
+    position: absolute;
+    top: 50%;
+    right: 5;
     background-color: $main-color;
     padding: 10px;
     border-radius: 20px;
@@ -504,6 +542,7 @@ body {
     // align-items: center;
     // justify-content: center;
     &__image {
+        position: relative;
         max-width: 50%;
         max-height: 500px;
         // max-width: 750px;
