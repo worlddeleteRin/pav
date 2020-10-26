@@ -16,7 +16,25 @@ $(document).ready(function() {
         prevArrow: $('.prev'),
         nextArrow: $('.next'),
     });
+
+    $(".comments__cards").slick({
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        // mobileFirst: true,
+        infinite: true,
+        cssEase: 'ease',
+        swipe: true,
+        arrows: true,
+        autoplay: false,
+        autoplayspeed: 1000,
+        lazyLoad: 'ondemand',
+        prevArrow: $('#comments_left'),
+        nextArrow: $('#comments_right'),
+    });
+
 });
+
+
 
 
 
