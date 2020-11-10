@@ -40,6 +40,8 @@ class Itemimage(models.Model):
 def deleteall():
     c = Category.objects.all()
     i = Item.objects.all()
+    item_img = Itemimage.objects.all()
+    item_img.delete()
     i.delete()
     c.delete()
     print('deleted all')

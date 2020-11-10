@@ -14,6 +14,7 @@ products_data_path = '/Users/noname/work/ilya/goods/goods.xlsx'
 
 
 def createProducts():
+    deleteall()
     print('-------------------------')
     print('starting create products')
     print('-------------------------')

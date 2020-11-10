@@ -9,6 +9,8 @@
     <div class="product__page__container">
         <div class="product__page__container__image">
 
+            {{ item.itemimage_set.all|length }}
+
             {% if item.itemimage_set.all|length > 1 %}
 
             <div class="product__page__container__image__toslide">
