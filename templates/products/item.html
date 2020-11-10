@@ -9,11 +9,13 @@
     <div class="product__page__container">
         <div class="product__page__container__image">
 
-            {{ item.itemimage_set.all|length }}
+            {% comment %} {{ item.itemimage_set.all|length }} {% endcomment %}
+
 
             {% if item.itemimage_set.all|length > 1 %}
 
-            <div class="product__page__container__image__toslide">
+            <div class="product__page__container__image__toslide
+            owl-carousel owl-theme">
             
             {% for img in item.itemimage_set.all  %}
             
@@ -21,16 +23,16 @@
              alt="">
 
              {% endfor %}
-             </div>
+            </div>
 
-             <span class="prev_1_1" id="prev_1">
+             {% comment %} <span class="prev_1_1" id="prev_1">
                 <i class="gg-chevron-left"></i>
             </span>
             <span class="next_1_1" id="next_1">
                 <i class="gg-chevron-right"></i>
-            </span> 
-            {% else %}
-                <div class="product__page__container__image__toslide">
+            </span>  {% endcomment %}
+                {% else %}
+                <div class="">
             
                 {% for img in item.itemimage_set.all  %}
             
