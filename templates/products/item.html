@@ -9,6 +9,8 @@
     <div class="product__page__container">
         <div class="product__page__container__image">
 
+            {% if item.itemimage_set.all|length > 1 %}
+
             <div class="product__page__container__image__toslide">
             
             {% for img in item.itemimage_set.all  %}
@@ -25,8 +27,17 @@
             <span class="next_1_1" id="next_1">
                 <i class="gg-chevron-right"></i>
             </span> 
+            {% else %}
+                <div class="">
+            
+                {% for img in item.itemimage_set.all  %}
+            
+                    <img src="{% static 'images/products/' %}{{ img.imgurl }}"
+                    alt="">
 
-            {% comment %} </span>  {% endcomment %}
+             {% endfor %}
+             </div>
+            {% endif %}
 
         </div>
         <div class="product__page__container__info">
