@@ -30,7 +30,7 @@ class Item(models.Model):
 
 class Itemimage(models.Model):
     item = models.ForeignKey(Item, on_delete = models.CASCADE, )
-    imgurl = models.ImageField (upload_to='static/images/products', blank = True, null = True)
+    imgurl = models.ImageField(upload_to='static/images/products', blank = True, null = True)
 
     def __str__(self):
         return self.item.name
