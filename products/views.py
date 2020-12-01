@@ -5,6 +5,10 @@ import urllib
 import os
 from django.core.files.storage import default_storage
 from pav.settings import * 
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
+
 
 # Create your views here.
 
@@ -31,5 +35,36 @@ def item(request, item_id):
     return render(request, 'products/item.html', {
         'item': current_item,
     })
+
+
+def contact_form_send(request):
+    name = request.GET['name']
+    name = urllib.parse.unquote(name)
+    phone = request.GET['phone']
+    phone = urllib.parse.unquote(phone)
+
+    context = {
+        'name': name,
+        'phone': phone,
+    }
+    html_email = render_to_string('products/blocks/email_form_template.html', context = context)
+    htmlt_email_plain = strip_tags(html_email)
+
+    try:
+        send_mail(
+                'Заявка на обратный звонок!',
+                htmlt_email_plain,
+                EMAIL_HOST_USER,
+                [
+                'maf.stroy1@gmail.com', 
+                ],
+                html_message = html_email
+                )  
+    except:
+        pass
+    return JsonResponse({
+
+    }, status = 200)
+
 
 

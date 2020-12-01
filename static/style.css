@@ -18,6 +18,34 @@
   font-family: "gpro-text-bold";
   src: url("./fonts/GTEestiProDisplay-Bold.ttf");
 }
+.form__error {
+  display: none;
+  color: red;
+}
+
+.form__error.show {
+  display: block;
+}
+
+.form_response_msg {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.form_resp_text {
+  text-align: center;
+  font-size: 23px;
+  margin: 20 0;
+}
+.form_fa_complete {
+  font-size: 100px;
+  color: #3ac267;;
+}
+
 body {
   font-family: "gpro-text-regular";
 }
@@ -1009,7 +1037,7 @@ body {
 }
 .pform__container__title {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 30px;
   font-size: 20px;
   text-transform: uppercase;
   font-family: "gpro-text-bold";
@@ -1022,8 +1050,8 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   width: 450px;
+  margin-top: 25px;
   max-width: 95%;
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;

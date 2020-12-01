@@ -23,4 +23,5 @@ urlpatterns = [
     path('', views.index, name = "index"),
     path('category/<int:cat_id>', views.category, name="category"),
     path('item/<int:item_id>', views.item, name="item"),
+    path('contact_form_send', views.contact_form_send, name = 'contact_form_send'),
 ]

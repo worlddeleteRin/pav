@@ -7,7 +7,7 @@
     <title>Торговые павильоны</title>
 
     <script src="{% static 'js/jquery.min.js' %}"></script>
-    <script src="{% static 'js/jquery-3.5.1.slim.min.js' %}"></script>
+    <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -51,6 +51,38 @@
 
 
     <script src="{% static 'slick/slick.js' %}"></script>
+
+    <script>
+        $("body").on('click', '.pform__button', function() {
+        $(".form__error__name").removeClass("show")
+        $(".form__error__phone").removeClass("show")
+        var name = $('input[name=name]').val()
+        var phone = $('input[name=phone]').val()
+        if (name.length < 1) {
+            $(".form__error__name").addClass("show")
+        }
+        else if (phone.length < 1) {
+            $(".form__error__phone").addClass("show")
+        }
+        else {
+            $(".form__error__name").removeClass("show")
+            $(".form__error__phone").removeClass("show")
+            $.ajax({
+                url: "{% url 'products:contact_form_send' %}",
+                data: {
+                    'name': name,
+                    'phone': phone,
+                }, success: function(data) {
+                    $(".pform__container").html("<div class='form_response_msg'><div><i class='fa fa-check-circle form_fa_complete'></div></i><div class='form_resp_text'>Спасибо за заявку, наш менеджер свяжется с вами!</div></div>")
+                    setTimeout(function() {
+                        $(".pform__wrap").removeClass("show")
+                        $(".pform__wrap__wrapper").removeClass("show")
+                    }, 2000)
+                }
+            })
+        }
+    })
+    </script>
 
 </body>
 </html>

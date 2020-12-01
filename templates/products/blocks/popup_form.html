@@ -8,11 +8,17 @@
         </div>
         
         <div class="pform__container__form">
+            <div class="form__error form__error__name">
+                Введите ваше имя
+            </div>
             <input type="text"
             name="name" id="input_name"
             class="contact__input"
             placeholder="Ваше имя"
             autocomplete="off">
+            <div class="form__error form__error__phone">
+                Введите номер телефона
+            </div>
             <input type="text"
             name="phone" id="input_phone"
             class="contact__input"
@@ -47,4 +53,5 @@
         $(".pform__wrap").addClass("show")
         $(".pform__wrap__wrapper").addClass("show")
     }
+
 </script>
