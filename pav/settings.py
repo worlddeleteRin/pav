@@ -120,6 +120,13 @@ USE_L10N = True
 USE_TZ = True
 
 
+# deploy settings
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+# 
+
+
 EMAIL_HOST = 'smtp.mail.ru'
 EMAIL_PORT = 2525
 EMAIL_HOST_USER = "worlddelete0@mail.ru"
