@@ -27,25 +27,6 @@
   display: block;
 }
 
-.form_response_msg {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  align-content: center;
-}
-.form_resp_text {
-  text-align: center;
-  font-size: 23px;
-  margin: 20 0;
-}
-.form_fa_complete {
-  font-size: 100px;
-  color: #3ac267;;
-}
-
 body {
   font-family: "gpro-text-regular";
 }
@@ -949,7 +930,7 @@ body {
 }
 .about__us__wrapper {
   background-color: #f3f5fd;
-  background: url("/static/images/slider2.png");
+  background: url("/static/images/slider1.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 30px 0px;
