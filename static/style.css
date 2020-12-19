@@ -1141,6 +1141,11 @@ body {
   align-items: center;
   padding: 50px 85px;
 }
+@media (max-width: 600px) {
+  .contact__info__block__main__content {
+    padding: 45 20;
+  }
+}
 .contact__info__block__main__content__name {
   font-family: "gpro-text-bold";
   font-size: 22px;
