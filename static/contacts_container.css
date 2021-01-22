@@ -1,0 +1,126 @@
+.contacts_container_wrapper__main {
+  background-color: #0e1312;
+  padding: 120 0 130 78;
+  color: white;
+}
+
+.contacts_container_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.contacts_content1 {
+  width: 40%;
+}
+
+.contacts__title {
+  font-size: calc(42px + 1vw);
+  font-family: "main_ebold";
+  font-weight: 900;
+  margin: 40 0;
+}
+
+.contact__item {
+  margin: 30 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.contact__item__icon i {
+  padding: 20;
+  background-color: #f6e978;
+  font-size: 30px;
+  color: black;
+}
+.contact__item__text {
+  margin: 0 0 0 30;
+  font-size: calc(12px + 0.54vw);
+}
+.contact__item__text a {
+  color: white;
+  text-decoration: none;
+}
+
+.contacts_content2 {
+  width: 50%;
+}
+
+.contacts__title2 {
+  color: #f6e978;
+  font-size: calc(27px + 1vw);
+  font-family: "main_ebold";
+  font-weight: 900;
+  margin: 40 0;
+}
+
+.contact2_button {
+  margin: 70 0;
+}
+
+.contact__form {
+  padding: 0 0;
+}
+
+.contact__form__input {
+  letter-spacing: 1.2;
+  font-family: "main_regular";
+  margin: 20 0;
+  padding: 10 0;
+  font-size: calc(16px + 0.5vw);
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+}
+.contact__form__input:focus {
+  border-bottom: 2px solid #3ac267;
+  outline: none;
+}
+
+.contact__form__input.alert {
+  letter-spacing: 1.2;
+  font-family: "main_regular";
+  margin: 20 0;
+  padding: 10 0;
+  font-size: calc(16px + 0.5vw);
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid red;
+}
+.contact__form__input.alert:focus {
+  border-bottom: 2px solid #3ac267;
+  outline: none;
+}
+.contact__form__input.alert::placeholder {
+  color: red;
+}
+
+@media (max-width: 888px) {
+  .contacts_container_wrapper__main {
+    padding: 120 0 100 0;
+  }
+
+  .contacts_container_wrapper {
+    flex-direction: column;
+  }
+
+  .contacts_content1 {
+    width: 100%;
+  }
+
+  .contacts_content2 {
+    width: 100%;
+  }
+
+  .contact2_button {
+    text-align: center;
+    margin: 5 0;
+  }
+
+  .contact__form {
+    padding: 30 0;
+  }
+}

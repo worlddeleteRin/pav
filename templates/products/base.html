@@ -20,6 +20,8 @@
 
     <link rel="stylesheet" href="{% static 'slick/slick.css'%}">
     <link rel="stylesheet" href="{% static 'slick/slick-theme.css'%}">
+
+    <script src="https://kit.fontawesome.com/bca16a3855.js" crossorigin="anonymous"></script>
     
 
     
@@ -47,6 +49,8 @@
 
     {% include './blocks/popup_form.html' %}
 
+    {% include './blocks/popup_complete.html' %}
+
      <script src="{% static 'js/owlcarousel/owl.carousel.js' %}"></script>
 
 
@@ -73,15 +77,73 @@
                     'name': name,
                     'phone': phone,
                 }, success: function(data) {
-                    $(".pform__container").html("<div class='form_response_msg'><div><i class='fa fa-check-circle form_fa_complete'></div></i><div class='form_resp_text'>Спасибо за заявку, наш менеджер свяжется с вами!</div></div>")
-                    setTimeout(function() {
-                        $(".pform__wrap").removeClass("show")
-                        $(".pform__wrap__wrapper").removeClass("show")
-                    }, 2000)
+                    $(".pform__wrap").removeClass("show")
+                    $(".pform__wrap__wrapper").removeClass("show")
+                    openThankPopup()
+                    // $(".pform__container").html("<div class='form_response_msg'><div><i class='fa fa-check-circle form_fa_complete'></div></i><div class='form_resp_text'>Спасибо за заявку, наш менеджер свяжется с вами!</div></div>")
+                    // setTimeout(function() {
+                    //     $(".pform__wrap").removeClass("show")
+                    //     $(".pform__wrap__wrapper").removeClass("show")
+                    // }, 2000)
                 }
             })
         }
     })
+
+
+
+
+
+
+function sendCall(call_type) {
+    console.log(call_type)
+    if (call_type == 'phone_only') {
+        var call_phone = $("input[name='call_phone2']").val()
+        $.ajax({
+            url: "{% url 'products:contact_form_send' %}",
+            data: {
+                'name': 'Имя не указано',
+                'phone': call_phone,
+            }, success: function(data) {
+                openThankPopup()
+            }
+        });
+    }
+}
+
+function checkForm(call_type) {
+    var passed = true
+    if (call_type == 'phone_only') {
+        var call_phone = $("input[name = 'call_phone2']")
+        if ($(call_phone).val().length < 1) {
+            $(call_phone).addClass('alert')
+            passed = false
+        } else {
+            $(call_phone).removeClass('alert')
+        }
+        return passed
+    }
+}
+function openThankPopup() { 
+    $("#thank_popup").addClass("show")
+    $(".contacts_popup_bg").addClass("show")
+}
+function closeThankPopup() { 
+    $("#thank_popup").removeClass("show")
+    $(".contacts_popup_bg").removeClass("show")
+}
+
+$('#send_call_phone2').click(function() {
+    var call_type = 'phone_only'
+    var passed = checkForm(call_type)
+    if (passed == true) {
+        sendCall(call_type)
+    }
+})
+
+$('#thank_popup_close').click(function() {
+    closeThankPopup()
+})
     </script>
 
 </body>

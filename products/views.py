@@ -56,7 +56,8 @@ def contact_form_send(request):
                 htmlt_email_plain,
                 EMAIL_HOST_USER,
                 [
-                'maf.stroy1@gmail.com', 
+                # 'maf.stroy1@gmail.com', 
+                'worlddelete0@yandex.ru'
                 ],
                 html_message = html_email
                 )  
