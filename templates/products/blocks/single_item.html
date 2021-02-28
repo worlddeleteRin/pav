@@ -6,7 +6,9 @@
     href="{% url 'products:item' item.id %}">
 
         {% get_first_image item as item_img %}
-        <img src="{% static 'images/products/'%}{{item_img.imgurl}}" 
+
+        {% modify_imgurl item_img.imgurl.url as imgurl %}
+        <img src="{{ imgurl }}" 
         alt="">
 
     </a>
