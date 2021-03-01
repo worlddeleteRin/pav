@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-01 10:00+0300\n"
+"POT-Creation-Date: 2021-03-01 14:19+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,85 +20,92 @@ msgstr ""
 
 #: pav/settings.py:124
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: pav/settings.py:125
 msgid "Ukrain"
-msgstr ""
+msgstr "Ukraine"
 
 #: pav/settings.py:126
 msgid "Russian"
-msgstr ""
+msgstr "Russian"
 
 #: templates/products/blocks/about_us.html:10
 msgid "О нас"
-msgstr ""
+msgstr "About Us"
 
 #: templates/products/blocks/about_us.html:15
 msgid ""
 "\n"
 "    Маф-Строй\n"
-"     - это большая команда высококлассных специалистов с более чем 10-летним "
-"опытом, готовых воплотить Вашу мечту в реальность! \n"
+"     - это большая команда высококлассных специалистов с более чем 10-летним опытом, готовых воплотить Вашу мечту в реальность! \n"
 "     "
 msgstr ""
+"\n"
+" Maf-Stroy\n"
+" - this is a large team of high-class specialists with more than 10 years of experience, ready to make your dream a reality! \n"
+" "
 
 #: templates/products/blocks/about_us.html:20
 msgid ""
 "\n"
-"     Мы предоставляем полный спектр услуг, начиная с подбора необходимой "
-"именно Вам конструкции , подготовкой  макета или проекта и заканчивая "
-"созданием МАФа и доставкой на место! \n"
+"     Мы предоставляем полный спектр услуг, начиная с подбора необходимой именно Вам конструкции , подготовкой  макета или проекта и заканчивая созданием МАФа и доставкой на место! \n"
 "     "
 msgstr ""
+"\n"
+" We provide a full range of services, starting with the selection of the necessary design, preparation of a layout or project and ending with the creation of MAF and delivery to the place! \n"
+" "
 
 #: templates/products/blocks/about_us.html:25
 msgid ""
 "\n"
-"     Заказ материалов осуществляется напрямую от заводов-изготовителей, что "
-"даёт возможность  значительно снизить себестоимость готовой продукции! Более "
-"200 выполненных объектов различной сложности, клиенты по всей стране и за "
-"рубежом. \n"
+"     Заказ материалов осуществляется напрямую от заводов-изготовителей, что даёт возможность  значительно снизить себестоимость готовой продукции! Более 200 выполненных объектов различной сложности, клиенты по всей стране и за рубежом. \n"
 "     "
 msgstr ""
+"\n"
+" The order of materials is carried out directly from manufacturers, which makes it possible to significantly reduce the cost of finished products! More than 200 executed objects of varying complexity, customers all over the country and abroad. \n"
+" "
 
 #: templates/products/blocks/about_us.html:29
 msgid ""
 "\n"
-"     Наши услуги позволяют в малые сроки открыть своё дело, построить "
-"собственный дом или просто реализовать любую, даже самую необычную идею!  "
-"Это основа для светлого будущего, построенная вручную. \n"
+"     Наши услуги позволяют в малые сроки открыть своё дело, построить собственный дом или просто реализовать любую, даже самую необычную идею!  Это основа для светлого будущего, построенная вручную. \n"
 "     "
 msgstr ""
+"\n"
+" Our services allow you to open your business in a short time, build your own house or just implement any, even the most unusual idea! This is the basis for a bright future, built by hand. \n"
+" "
 
 #: templates/products/blocks/category_blocks.html:8
 #: templates/products/header.html:36 templates/products/header.html:67
 msgid "Каталог"
-msgstr "Catalogue"
+msgstr "Catalog"
 
 #: templates/products/blocks/comments.html:7
 msgid "Отзывы клиентов"
-msgstr ""
+msgstr "Customer Reviews"
 
 #: templates/products/blocks/comments.html:21
 msgid "Евгений Байда"
-msgstr ""
+msgstr "Evgeny Bayda"
 
 #: templates/products/blocks/comments.html:25
 msgid "45 лет"
-msgstr ""
+msgstr "45 years"
 
 #: templates/products/blocks/comments.html:30
 msgid ""
 "\n"
-"                    Спасибо ребятам maf_stroy ,выполненили свою работу "
-"качественно!И не ожидал ,что будет это так быстро!Спасибо,буду обращаться!\n"
+"                    Спасибо ребятам maf_stroy ,выполненили свою работу качественно!И не ожидал ,что будет это так быстро!Спасибо,буду обращаться!\n"
 "                "
 msgstr ""
+"\n"
+" Thank you guys maf_stroy, have done their work qualitatively! And didn't expect it to be so fast! Thank you, I will address!\n"
+" "
 
 #: templates/products/blocks/comments.html:44
 msgid "Игорь Рыбаков"
-msgstr ""
+msgstr "Igor Rybakov"
 
 #: templates/products/blocks/comments.html:48
 msgid ""
@@ -106,15 +113,19 @@ msgid ""
 "                    32 года \n"
 "                    "
 msgstr ""
+"\n"
+" 32 years \n"
+" "
 
 #: templates/products/blocks/comments.html:55
 msgid ""
 "\n"
-"                    Довольный работой,все четко и быстро!Был приятно удивлен!"
-"Отдельное спасибо за подбор цвета фасада получилось супер💥И для моего "
-"бизнеса важно детали ☝️\n"
+"                    Довольный работой,все четко и быстро!Был приятно удивлен!Отдельное спасибо за подбор цвета фасада получилось супер💥И для моего бизнеса важно детали ☝️\n"
 "                    "
 msgstr ""
+"\n"
+" Satisfied with the work, everything is clear and fast! Was pleasantly surprised! Special thanks for selecting the color of the facade turned out super 💥 And for my business the details are important ☝️\n"
+" "
 
 #: templates/products/blocks/comments.html:69
 msgid ""
@@ -122,6 +133,9 @@ msgid ""
 "                    Андрей Фролов\n"
 "                    "
 msgstr ""
+"\n"
+" Andrey Frolov\n"
+" "
 
 #: templates/products/blocks/comments.html:75
 msgid ""
@@ -129,19 +143,23 @@ msgid ""
 "                    49 лет  \n"
 "                    "
 msgstr ""
+"\n"
+" 49 years \n"
+" "
 
 #: templates/products/blocks/comments.html:82
 msgid ""
 "\n"
-"                    Хочу поблагодарить Вашу организацию maf_srtoy помогли "
-"определиться с выбором и сделали все классно👍🏼Хорошо,что мне Вас "
-"посоветовали!\n"
+"                    Хочу поблагодарить Вашу организацию maf_srtoy помогли определиться с выбором и сделали все классно👍🏼Хорошо,что мне Вас посоветовали!\n"
 "                    "
 msgstr ""
+"\n"
+" I want to thank your organization maf_srtoy helped to decide on the choice and did everything cool 👍🏼 Good, that I was advised!\n"
+" "
 
 #: templates/products/blocks/comments.html:96
 msgid "Евгений Гриневский"
-msgstr ""
+msgstr "Evgeny Grinevsky"
 
 #: templates/products/blocks/comments.html:100
 msgid ""
@@ -149,18 +167,23 @@ msgid ""
 "                    29 лет  \n"
 "                    "
 msgstr ""
+"\n"
+" 29 years \n"
+" "
 
 #: templates/products/blocks/comments.html:107
 msgid ""
 "\n"
-"                    Спасибо maf_stroy за проделанную работу и продуманность "
-"до мелочей!Теперь работа в удовольствие и в комфорте!То,что нужно👌\n"
+"                    Спасибо maf_stroy за проделанную работу и продуманность до мелочей!Теперь работа в удовольствие и в комфорте!То,что нужно👌\n"
 "                    "
 msgstr ""
+"\n"
+" Thank you maf_stroy for the work done and thoughtfulness to the smallest detail! Now work in pleasure and comfort! What you need 👌\n"
+" "
 
 #: templates/products/blocks/comments.html:121
 msgid "Устин Беляев"
-msgstr ""
+msgstr "Ustin Belyaev"
 
 #: templates/products/blocks/comments.html:125
 msgid ""
@@ -168,18 +191,23 @@ msgid ""
 "                    47 лет  \n"
 "                    "
 msgstr ""
+"\n"
+" 47 years \n"
+" "
 
 #: templates/products/blocks/comments.html:132
 msgid ""
 "\n"
-"                    Благодарим Вашу команду,все сделали по требованию!"
-"Молодцы!\n"
+"                    Благодарим Вашу команду,все сделали по требованию!Молодцы!\n"
 "                    "
 msgstr ""
+"\n"
+" Thank your team, all done on demand! Well done!\n"
+" "
 
 #: templates/products/blocks/comments.html:146
 msgid "Иван Нестеров"
-msgstr ""
+msgstr "Ivan Nesterov"
 
 #: templates/products/blocks/comments.html:150
 msgid ""
@@ -187,71 +215,77 @@ msgid ""
 "                    28 лет  \n"
 "                    "
 msgstr ""
+"\n"
+" 28 years \n"
+" "
 
 #: templates/products/blocks/comments.html:157
 msgid ""
 "\n"
-"                    Выражаю благодарность 🙏🏼 за качественно выполненную "
-"работу!Мы остались довольны,будем обращаться еще и рекомендовать Вас как "
-"хороших специалистов!\n"
+"                    Выражаю благодарность 🙏🏼 за качественно выполненную работу!Мы остались довольны,будем обращаться еще и рекомендовать Вас как хороших специалистов!\n"
 "                    "
 msgstr ""
+"\n"
+" I express my gratitude 🙏🏼 for the quality done work! We were satisfied, we will also appeal and recommend you as good specialists!\n"
+" "
 
 #: templates/products/blocks/contacts_container.html:6
-#, fuzzy
-#| msgid "Контакты"
 msgid "Наши контакты"
-msgstr "Contacts"
+msgstr "Our contacts"
 
 #: templates/products/blocks/contacts_container.html:32
 msgid "г. Херсон, ул. Илюши Кулика, 10"
-msgstr ""
+msgstr "g. Kherson, st. Ilyushi Kulika, 10"
 
 #: templates/products/blocks/contacts_container.html:40
 msgid "Сделаем Ваш проект еще лучше!"
-msgstr ""
+msgstr "Let's make your project even better!"
 
 #: templates/products/blocks/contacts_container.html:49
 msgid "Узнать как"
-msgstr ""
+msgstr "Learn how"
 
 #: templates/products/blocks/cost_1.html:5
 msgid "Рассчитай стоимость в один клик!"
-msgstr ""
+msgstr "Calculate the cost in one click!"
 
 #: templates/products/blocks/cost_1.html:8
 msgid "Рассчитать стоимость"
-msgstr ""
+msgstr "Calculate the cost"
 
 #: templates/products/blocks/cost_2.html:5
 msgid "Сделай заказ прямо сейчас!"
-msgstr ""
+msgstr "Make an order now!"
 
 #: templates/products/blocks/cost_2.html:8
 msgid "Сделать заказ"
-msgstr ""
+msgstr "Make an order"
 
 #: templates/products/blocks/dignity.html:5
 msgid "Наши преимущества"
-msgstr ""
+msgstr "Our Advantages"
 
 #: templates/products/blocks/dignity.html:12
 msgid "Цена фиксирована"
-msgstr ""
+msgstr "Price fixed"
 
 #: templates/products/blocks/dignity.html:17
 msgid ""
 "\n"
 "                    Цена не меняется на протяжении\n"
-"                    строительства. Мы составляем план и коммерческое "
-"предложение, \n"
+"                    строительства. Мы составляем план и коммерческое предложение, \n"
 "                    исходя из всех Ваших пожеланий.\n"
 "                    "
 msgstr ""
+"\n"
+" Price does not change throughout\n"
+" construction. We draw up a plan and a commercial offer, \n"
+" based on all your wishes.\n"
+" "
 
 #: templates/products/blocks/dignity.html:28
 msgid "Техническое задание"
-msgstr ""
+msgstr "Technical specification"
 
 #: templates/products/blocks/dignity.html:33
 msgid ""
@@ -260,6 +294,10 @@ msgid ""
 "                     консультации наших специалистов.\n"
 "                     "
 msgstr ""
+"\n"
+" Can be completely yours or refined after\n"
+" consultations of our specialists.\n"
+" "
 
 #: templates/products/blocks/dignity.html:43
 msgid ""
@@ -267,6 +305,9 @@ msgid ""
 "                    Качественные материалы\n"
 "                    "
 msgstr ""
+"\n"
+" Quality materials\n"
+" "
 
 #: templates/products/blocks/dignity.html:50
 msgid ""
@@ -276,10 +317,15 @@ msgid ""
 "                    с заводов-изготовителей.\n"
 "                    "
 msgstr ""
+"\n"
+" For the production of IAF we use \n"
+" certified materials ordered directly \n"
+" (c) Manufacturers.\n"
+" "
 
 #: templates/products/blocks/dignity.html:61
 msgid "Специалисты своего дела"
-msgstr ""
+msgstr "Specialists of their business"
 
 #: templates/products/blocks/dignity.html:66
 msgid ""
@@ -288,10 +334,14 @@ msgid ""
 "                    работают специалисты узкого профиля.\n"
 "                    "
 msgstr ""
+"\n"
+" We are for the division of labor. Over each project \n"
+" specialists of a narrow profile work.\n"
+" "
 
 #: templates/products/blocks/dignity.html:76
 msgid "Любой вид оплаты"
-msgstr ""
+msgstr "Any type of payment"
 
 #: templates/products/blocks/dignity.html:81
 msgid ""
@@ -299,52 +349,65 @@ msgid ""
 "                    Наличный или безналичный расчёт, с НДС, без НДС\n"
 "                    "
 msgstr ""
+"\n"
+" Cash or non-cash settlement, including VAT, without VAT\n"
+" "
 
 #: templates/products/blocks/dignity.html:90
 msgid "Своя доставка"
-msgstr ""
+msgstr "Its delivery"
 
 #: templates/products/blocks/dignity.html:95
 msgid ""
 "\n"
-"                    Мы самостоятельно выполним транспортировку габаритного и "
-"негабаритного объекта. \n"
-"                    Вам не нужно будет тратить кучу времени и средств на  "
-"логистику.\n"
+"                    Мы самостоятельно выполним транспортировку габаритного и негабаритного объекта. \n"
+"                    Вам не нужно будет тратить кучу времени и средств на  логистику.\n"
 "                    "
 msgstr ""
+"\n"
+" We will independently carry out transportation of the overall and oversized object. \n"
+" You won't need to spend a bunch of time and money on logistics.\n"
+" "
+
+#: templates/products/blocks/item_slider.html:9
+msgid "Наши предложения"
+msgstr "Our offers"
 
 #: templates/products/blocks/popup_complete.html:7
 msgid "Ваша заявка принята"
-msgstr ""
+msgstr "Your application is accepted"
 
 #: templates/products/blocks/popup_complete.html:12
 msgid "Наш менеджер скоро свяжется с Вами."
-msgstr ""
+msgstr "Our manager will contact you soon."
 
 #: templates/products/blocks/popup_complete.html:17
 msgid "Закрыть"
-msgstr ""
+msgstr "Close"
 
 #: templates/products/blocks/popup_form.html:5
 msgid "бесплатный рассчет стоимости!"
-msgstr ""
+msgstr "free cost calculation!"
 
 #: templates/products/blocks/popup_form.html:8
 msgid "Оставьте заявку, и наш менеджер свяжется с вами."
-msgstr ""
+msgstr "Leave a request and our manager will contact you."
 
 #: templates/products/blocks/popup_form.html:13
 msgid "Введите ваше имя"
-msgstr ""
+msgstr "Enter your name"
 
 #: templates/products/blocks/popup_form.html:21
 msgid "Введите номер телефона"
-msgstr ""
+msgstr "Enter your phone number"
 
 #: templates/products/blocks/popup_form.html:30
 msgid "Отправить заявку"
-msgstr ""
+msgstr "Submit a request"
+
+#: templates/products/blocks/single_item.html:33
+msgid "Подробнее"
+msgstr "Read more"
 
 #: templates/products/footer.html:21
 msgid ""
@@ -352,6 +415,9 @@ msgid ""
 "                    г. Херсон, ул. Илюши Кулика, 10\n"
 "                    "
 msgstr ""
+"\n"
+" g. Kherson, st. Ilyushi Kulika, 10\n"
+" "
 
 #: templates/products/footer.html:50
 msgid ""
@@ -359,63 +425,62 @@ msgid ""
 "            Все права защищены © 2020\n"
 "            "
 msgstr ""
+"\n"
+" All rights reserved © 2020\n"
+" "
 
 #: templates/products/header.html:31 templates/products/header.html:61
 msgid "Главная"
-msgstr "Main page"
+msgstr "home"
 
 #: templates/products/header.html:41
 msgid "Про Нас"
-msgstr "About us"
+msgstr "About Us"
 
-#: templates/products/header.html:46 templates/products/header.html:85
+#: templates/products/header.html:46 templates/products/header.html:79
 msgid "Контакты"
 msgstr "Contacts"
 
 #: templates/products/header.html:73
 msgid "О Нас"
-msgstr "About us"
-
-#: templates/products/header.html:79
-msgid "еще один пункт меню"
-msgstr ""
+msgstr "About Us"
 
 #: templates/products/item.html:70
 msgid "Заказать звонок"
-msgstr ""
+msgstr "Order a call"
 
 #: templates/products/item.html:76
 msgid "Характеристики"
-msgstr ""
+msgstr "Features"
 
 #: templates/products/item.html:80
 msgid "Размер:"
-msgstr ""
+msgstr "Size:"
 
 #: templates/products/item.html:86
 msgid "Внутренняя высота:"
-msgstr ""
+msgstr "Inner height:"
 
 #: templates/products/item.html:92
 msgid "Внешняя высота:"
-msgstr ""
+msgstr "External height:"
 
 #: templates/products/item.html:98
 msgid "Экстерьер:"
-msgstr ""
+msgstr "Exterior:"
 
 #: templates/products/item.html:104
 msgid "Интерьер:"
-msgstr ""
+msgstr "Interior:"
 
 #: templates/products/item.html:110
 msgid "Двери, Окна:"
-msgstr ""
+msgstr "Doors, Windows:"
 
 #: templates/products/item.html:116
 msgid "Пол:"
-msgstr ""
+msgstr "Gender:"
 
 #: templates/products/item.html:122
 msgid "Электрика:"
-msgstr ""
+msgstr "Electrics:"

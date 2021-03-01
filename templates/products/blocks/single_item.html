@@ -1,5 +1,6 @@
 {% load static %}
 {% load extras %}
+{% load i18n %}
 
 <div class="single__item">
     <a class="single__item__image"
@@ -29,7 +30,7 @@
     </div>
     <a class="single__item__button"
     href="{% url 'products:item' item.id %}">
-        Подробнее
+        {% blocktrans %}Подробнее{% endblocktrans %}
     </a>
 </div>
 
