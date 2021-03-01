@@ -60,7 +60,9 @@ $fireg: #ff4e00;
 // $main-color-hover: #119d9d;
 $main-color-hover: rgb(0,78,214);
 
-
+.pointer {
+    cursor: pointer;
+}
 .form__error {
     display: none;
     color: red;
@@ -1584,4 +1586,14 @@ body {
 .nice_title.middle span {
     font-size: calc(1.7375rem + 1vw);
     background-position: 0 150%;
+}
+.language_container {
+    text-align: center;
+}
+.language_item {
+    margin: 0 4;
+    img {
+        width: 22px;
+        object-fit: contain;
+    }
 }

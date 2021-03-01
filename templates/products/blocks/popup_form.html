@@ -1,15 +1,16 @@
+{% load i18n %}
 <div class="pform__wrap">
     <div class="pform__container">
         <div class="pform__container__title">
-            бесплатный рассчет стоимости!
+            {% blocktrans %}бесплатный рассчет стоимости!{% endblocktrans %}
         </div>
         <div class="pform__container__subtitle">
-            Оставьте заявку, и наш менеджер свяжется с вами.
+            {% blocktrans %}Оставьте заявку, и наш менеджер свяжется с вами.{% endblocktrans %}
         </div>
         
         <div class="pform__container__form">
             <div class="form__error form__error__name">
-                Введите ваше имя
+                {% blocktrans %}Введите ваше имя{% endblocktrans %}
             </div>
             <input type="text"
             name="name" id="input_name"
@@ -17,7 +18,7 @@
             placeholder="Ваше имя"
             autocomplete="off">
             <div class="form__error form__error__phone">
-                Введите номер телефона
+                {% blocktrans %}Введите номер телефона{% endblocktrans %}
             </div>
             <input type="text"
             name="phone" id="input_phone"
@@ -26,7 +27,7 @@
             autocomplete="off">
             <span class="pform__button"
             id="#pform_button">
-            Отправить заявку
+            {% blocktrans %}Отправить заявку{% endblocktrans %}
             </span>
         </div>
     </div>

@@ -168,6 +168,10 @@
     padding: 30 0;
   }
 }
+.pointer {
+  cursor: pointer;
+}
+
 .form__error {
   display: none;
   color: red;
@@ -1621,4 +1625,16 @@ body {
 .nice_title.middle span {
   font-size: calc(1.7375rem + 1vw);
   background-position: 0 150%;
+}
+
+.language_container {
+  text-align: center;
+}
+
+.language_item {
+  margin: 0 4;
+}
+.language_item img {
+  width: 22px;
+  object-fit: contain;
 }

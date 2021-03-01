@@ -1,5 +1,17 @@
 {% load static %}
+{% load i18n %}
 <div class="header__main__wrapper">
+    <div class="language_container">
+        <span class="language_item pointer" value="en">
+            <img src="{% static 'images/en.svg' %}" alt="">
+        </span>
+        <span class="language_item pointer" value="ru">
+            <img src="{% static 'images/ru.svg' %}" alt="">
+        </span>
+        <span class="language_item pointer" value="ua">
+            <img src="{% static 'images/ua.svg' %}" alt="">
+        </span>
+    </div>
     <div class="header__main__container">
         <div class="header__main__container__logo">
             <!-- <img src="https://placehold.it/400x400" alt=""> -->
@@ -16,24 +28,25 @@
         <div class="header__main__container__items">
             <div class="header__main__container__item">
                 <a href="{% url 'products:index' %}">
-                    Главная 
+                    {% blocktrans %}Главная{% endblocktrans %}
                 </a>
             </div>
             <div class="header__main__container__item">
                 <a href="{% url 'products:index' %}#catalog">
-                   Каталог 
+                   {% blocktrans %}Каталог{% endblocktrans %}
                 </a>
             </div>
             <div class="header__main__container__item">
                 <a href="{% url 'products:index' %}#aboutus"> 
-                    Про Нас
+                    {% blocktrans %}Про Нас{% endblocktrans %}
                 </a>
             </div>
             <div class="header__main__container__item">
                 <a href="{% url 'products:index' %}#ourcontacts">
-                   Контакты
+                   {% blocktrans %}Контакты{% endblocktrans %}
                 </a>
             </div>
+
         </div>
     </div>
 </div>
@@ -45,25 +58,25 @@
             <div class="mobile__menu__main__container__menu__item">
                 <a
                 href="{% url 'products:index' %}">
-                    Главная
+                    {% blocktrans %}Главная{% endblocktrans %}
                 </a>
             </div>
             <div class="mobile__menu__main__container__menu__item">
                 <a
                 href="{% url 'products:index' %}#catalog">
-                    Каталог
+                    {% blocktrans %}Каталог{% endblocktrans %}
                 </a>
             </div>
             <div class="mobile__menu__main__container__menu__item">
                 <a
                 href="{% url 'products:index' %}#aboutus">
-                    О Нас
+                    {% blocktrans %}О Нас{% endblocktrans %}
                 </a>
             </div>
             <div class="mobile__menu__main__container__menu__item">
                 <a
                 href="{% url 'products:index' %}#ourcontacts">
-                    Контакты
+                    {% blocktrans %}Контакты{% endblocktrans %}
                 </a>
             </div>
         </div>

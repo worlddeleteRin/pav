@@ -1,6 +1,7 @@
 {% extends './base.html' %}
 {% load static %}
 {% load extras %}
+{% load i18n %}
 
 {% block content %}
 
@@ -64,59 +65,59 @@
            <div class="call__button__1 green">
                 <span class="#call__button__1">
                 <i class="fa fa-phone-alt"></i>
-                Заказать звонок
+                {% blocktrans %}Заказать звонок{% endblocktrans %}
                 </span>
            </div>
            <div class="product__page__container__info__features">
                 <div class="product__page__container__info__features__title">
                     <span>
-                        Характеристики
+                        {% blocktrans %}Характеристики{% endblocktrans %}
                     </span>
                 </div>
                 <div class="product__page__container__info__features__item">
-                    Размер:
+                    {% blocktrans %}Размер:{% endblocktrans %}
                         <span>
                             {{ item.size }}
                         </span>
                     </div>
                 <div class="product__page__container__info__features__item">
-                    Внутренняя высота:
+                    {% blocktrans %}Внутренняя высота:{% endblocktrans %}
                         <span>
                             {{ item.h_in }}
                         </span>
                     </div>
                 <div class="product__page__container__info__features__item">
-                    Внешняя высота:
+                    {% blocktrans %}Внешняя высота:{% endblocktrans %}
                         <span>
                             {{ item.h_out }}
                         </span>
                 </div>
                 <div class="product__page__container__info__features__item">
-                    Экстерьер:
+                    {% blocktrans %}Экстерьер:{% endblocktrans %}
                         <span>
                             {{ item.eksterier }}
                         </span>
                 </div>
                 <div class="product__page__container__info__features__item">
-                    Интерьер:
+                    {% blocktrans %}Интерьер:{% endblocktrans %}
                         <span>
                             {{ item.interier }}
                         </span>
                 </div>
                 <div class="product__page__container__info__features__item">
-                    Двери, Окна:
+                    {% blocktrans %}Двери, Окна:{% endblocktrans %}
                         <span>
                             {{ item.doors }}
                         </span>
                 </div>
                 <div class="product__page__container__info__features__item">
-                    Пол:
+                    {% blocktrans %}Пол:{% endblocktrans %}
                         <span>
                             {{ item.floor }}
                         </span>
                 </div>
                 <div class="product__page__container__info__features__item">
-                    Электрика:
+                    {% blocktrans %}Электрика:{% endblocktrans %}
                         <span>
                             {{ item.electrik }}
                         </span>

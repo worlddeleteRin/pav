@@ -1,8 +1,9 @@
+{% load i18n %}
 <div class="contacts_container_wrapper__main">
     <div class="contacts_container_wrapper">
         <div class="contacts_content1">
             <div class="contacts__title">
-                Наши контакты
+                {% blocktrans %}Наши контакты{% endblocktrans %}
             </div>
             <!-- <div class="contact__item">
                 <div class="contact__item__icon">
@@ -28,7 +29,7 @@
                 </div>
                 <div class="contact__item__text">
                     <a>
-                        г. Херсон, ул. Илюши Кулика, 10
+                        {% blocktrans %}г. Херсон, ул. Илюши Кулика, 10{% endblocktrans %}
                     </a>
                 </div>
             </div>
@@ -36,7 +37,7 @@
         </div>
         <div class="contacts_content2">
             <div class="contacts__title2">
-                Сделаем Ваш проект еще лучше!
+                {% blocktrans %}Сделаем Ваш проект еще лучше!{% endblocktrans %}
             </div>
 
             <input name="call_phone2"
@@ -45,7 +46,7 @@
             <div class="contact2_button contact__form">
                 <span class="nice_button">
                     <span id="send_call_phone2">
-                    Узнать как
+                    {% blocktrans %}Узнать как{% endblocktrans %}
                     </span>
                 </span>
             </div>

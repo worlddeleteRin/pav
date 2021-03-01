@@ -1,3 +1,4 @@
+{% load i18n %}
 <div class="footer__wrapper">
     <div class="footer__main">
         <div class="footer__main__block">
@@ -17,7 +18,9 @@
             <div class="footer__main__block__contact">
                 <i class="fa fa-map-marker"></i>
                 <span>
+                    {% blocktrans %}
                     г. Херсон, ул. Илюши Кулика, 10
+                    {% endblocktrans %}
                 </span>
             </div>
             <div class="footer__main__block__contact">
@@ -44,7 +47,9 @@
     </div>
     <div class="all__rights">
         <span>
+            {% blocktrans %}
             Все права защищены © 2020
+            {% endblocktrans %}
         </span>
     </div>
 </div>

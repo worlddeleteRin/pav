@@ -1,12 +1,20 @@
 #!/usr/bin/env python3
 
-from products.models import *
+
 import pandas as pd
 import numpy as np
 import os
 import pandas as pd
 import requests
 import base64
+
+import django
+from django.conf import settings
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'pav.settings')
+django.setup()
+
+from products.models import *
 
 brand_img_path = 'static/images/'
 products_img_path = 'static/images/products/'
