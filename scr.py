@@ -18,7 +18,7 @@ from products.models import *
 
 brand_img_path = 'static/images/'
 products_img_path = 'static/images/products/'
-products_data_path = '/Users/noname/work/ilya/goods/goods.xlsx'
+products_data_path = '/Users/noname/work/ilya/goods/goods_new.xlsx'
 
 
 def createProducts():
@@ -30,25 +30,42 @@ def createProducts():
     data = pd.read_excel(products_data_path)
     for index, item in data.iterrows():
         name = item['name']
+        name_en = item['name_en']
+        name_ua = item['name_ua']
         price = item['price']
         price = price.replace('от', '').strip()
         price = int(price)
         category_name = item['category']
+        category_name_en = item['category_en']
+        category_name_ua = item['category_ua']
         size = item['size']
         h_in = item['h_in']
         h_out = item['h_out']
         eksterier = item['eksterier']
+        eksterier_en = item['eksterier_en']
+        eksterier_ua = item['eksterier_ua']
         interier = item['interier']
+        interier_en = item['interier_en']
+        interier_ua = item['interier_ua']
         doors = item['doors']
+        doors_en = item['doors_en']
+        doors_ua = item['doors_ua']
         floor = item['floor']
+        floor_en = item['floor_en']
+        floor_ua = item['floor_ua']
         electrik = item['electrik']
+        electrik_en = item['electrik_en']
+        electrik_ua = item['electrik_ua']
         
         category_imgurl = item['category_imgurl']
 
         category = Category.objects.get_or_create(
             name = category_name,
+            name_en = category_name_en,
+            name_uk = category_name_ua,
+            name_ru = category_name, 
             imgurl = category_imgurl,
-        )[0]
+        )[0]    
 
         print(category.id, category.name)
         print(price, type(price))
@@ -56,15 +73,33 @@ def createProducts():
         new_item = Item(
             category = category,
             name = name,
+            name_en = name_en,
+            name_uk = name_ua,
+            name_ru = name,
             price = price,
             size = size,
             h_in = h_in,
             h_out = h_out,
             eksterier = eksterier,
+            eksterier_en = eksterier_en,
+            eksterier_uk = eksterier_ua,
+            eksterier_ru = eksterier,
             interier = interier,
+            interier_en = interier_en,
+            interier_uk = interier_ua,
+            interier_ru = interier,
             doors = doors,
+            doors_en = doors_en,
+            doors_uk = doors_ua,
+            doors_ru = doors,
             floor = floor,
+            floor_en = floor_en,
+            floor_uk = floor_ua,
+            floor_ru = floor,
             electrik = electrik,
+            electrik_en = electrik_en,
+            electrik_uk = electrik_ua,
+            electrik_ru = electrik,
         )
         new_item.save()
 
