@@ -18,7 +18,7 @@ from products.models import *
 
 brand_img_path = 'static/images/'
 products_img_path = 'static/images/products/'
-products_data_path = '/Users/noname/work/ilya/goods/goods_new.xlsx'
+products_data_path = "/Users/noname/work/ilya/goods/goods_final_translated.xlsx"
 
 
 def createProducts():
@@ -32,30 +32,37 @@ def createProducts():
         name = item['name']
         name_en = item['name_en']
         name_ua = item['name_ua']
+        name_ge = item['name_de']
         price = item['price']
         price = price.replace('от', '').strip()
         price = int(price)
         category_name = item['category']
         category_name_en = item['category_en']
         category_name_ua = item['category_ua']
+        category_name_ge = item['category_de']
         size = item['size']
         h_in = item['h_in']
         h_out = item['h_out']
         eksterier = item['eksterier']
         eksterier_en = item['eksterier_en']
         eksterier_ua = item['eksterier_ua']
+        eksterier_ge = item['eksterier_de']
         interier = item['interier']
         interier_en = item['interier_en']
         interier_ua = item['interier_ua']
+        interier_ge = item['interier_de']
         doors = item['doors']
         doors_en = item['doors_en']
         doors_ua = item['doors_ua']
+        doors_ge = item['doors_de']
         floor = item['floor']
         floor_en = item['floor_en']
         floor_ua = item['floor_ua']
+        floor_ge = item['floor_de']
         electrik = item['electrik']
         electrik_en = item['electrik_en']
         electrik_ua = item['electrik_ua']
+        electrik_ge = item['electrik_de']
         
         category_imgurl = item['category_imgurl']
 
@@ -63,6 +70,7 @@ def createProducts():
             name = category_name,
             name_en = category_name_en,
             name_uk = category_name_ua,
+            name_ge = category_name_ge,
             name_ru = category_name, 
             imgurl = category_imgurl,
         )[0]    
@@ -75,6 +83,7 @@ def createProducts():
             name = name,
             name_en = name_en,
             name_uk = name_ua,
+            name_ge = name_ge,
             name_ru = name,
             price = price,
             size = size,
@@ -83,24 +92,30 @@ def createProducts():
             eksterier = eksterier,
             eksterier_en = eksterier_en,
             eksterier_uk = eksterier_ua,
+            eksterier_ge = eksterier_ge,
             eksterier_ru = eksterier,
             interier = interier,
             interier_en = interier_en,
             interier_uk = interier_ua,
+            interier_ge = interier_ge,
             interier_ru = interier,
             doors = doors,
             doors_en = doors_en,
             doors_uk = doors_ua,
+            doors_ge = doors_ge,
             doors_ru = doors,
             floor = floor,
             floor_en = floor_en,
             floor_uk = floor_ua,
+            floor_ge = floor_ge,
             floor_ru = floor,
             electrik = electrik,
             electrik_en = electrik_en,
             electrik_uk = electrik_ua,
+            electrik_ge = electrik_ge,
             electrik_ru = electrik,
         )
+        print(new_item.name_ge)
         new_item.save()
 
         imgurl = item['imgurl']

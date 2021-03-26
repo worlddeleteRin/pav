@@ -124,8 +124,10 @@ from django.utils.translation import ugettext_lazy as _
 LANGUAGES = (
     ('en', _('English')),
     ('uk', _('Ukrain')),
+    ('ge', _('German')),
     ('ru', _('Russian')),
 )
+
 LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'UTC'

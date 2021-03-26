@@ -95,6 +95,7 @@ def contact_form_send(request):
 
 def set_language_ajax(request):
     lang_code = request.GET['lang_code']
+    print('lang code is', lang_code)
     set_current_language_cookie(request, lang_code)
     success = True
     return JsonResponse({
