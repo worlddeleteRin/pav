@@ -8,7 +8,7 @@ from pav.settings import *
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
-
+l
 from django.utils import translation
 
 
@@ -84,8 +84,8 @@ def contact_form_send(request):
             'mafstroygarant@mail.ru',
             # EMAIL_HOST_USER,
             [
-            # 'maf.stroy1@gmail.com', 
-            'worlddelete0@yandex.ru'
+            'maf.stroy1@gmail.com', 
+            # 'worlddelete0@yandex.ru'
             ],
             html_message = html_email
             )  
