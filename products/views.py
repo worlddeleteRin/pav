@@ -76,19 +76,22 @@ def contact_form_send(request):
     html_email = render_to_string('products/blocks/email_form_template.html', context = context)
     htmlt_email_plain = strip_tags(html_email)
 
-    try:
-        send_mail(
-                'Заявка на обратный звонок!',
-                htmlt_email_plain,
-                EMAIL_HOST_USER,
-                [
-                'maf.stroy1@gmail.com', 
-                # 'worlddelete0@yandex.ru'
-                ],
-                html_message = html_email
-                )  
-    except:
-        pass
+    # try:
+    print('start sending')
+    send_mail(
+            'Заявка на обратный звонок!',
+            htmlt_email_plain,
+            'mafstroygarant@mail.ru',
+            # EMAIL_HOST_USER,
+            [
+            # 'maf.stroy1@gmail.com', 
+            'worlddelete0@yandex.ru'
+            ],
+            html_message = html_email
+            )  
+    print('send')
+    # except:
+    #     pass
     return JsonResponse({
 
     }, status = 200)

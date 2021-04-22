@@ -1,2 +1,9 @@
 translate.py
 .DS_Store
+/secure
+.secure
+*secure
+*.secure
+*/secure
+/.secure
+*/.secure
