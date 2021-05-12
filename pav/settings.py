@@ -127,6 +127,7 @@ LANGUAGES = (
     ('uk', _('Ukrain')),
     ('ge', _('German')),
     ('ru', _('Russian')),
+    ('tr', _('Turkish')),
 )
 
 LANGUAGE_CODE = 'ru'
