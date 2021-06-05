@@ -8,6 +8,7 @@ class ItemiamgeInline(admin.TabularInline):
     model = Itemimage
 
 class ItemAdmin(admin.ModelAdmin):
+    search_fields = ['name']
     inlines = [ItemiamgeInline]
 
 admin.site.register(Category)
