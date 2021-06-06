@@ -54,7 +54,9 @@
     </div>
     {% endblock main_header %}
 
-    <div class="main__site__wrapper">
+    <div 
+	id="main_site_content"
+	class="main__site__wrapper">
         {% block content %}
 
         {% endblock content %}
@@ -68,6 +70,8 @@
     {% include './blocks/popup_form.html' %}
 
     {% include './blocks/popup_complete.html' %}
+
+	{% include './blocks/go_to_top.html' %}
 
     <div id="google_translate_element"></div>
 
