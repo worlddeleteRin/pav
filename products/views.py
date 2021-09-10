@@ -1,4 +1,4 @@
-from django.shortcuts import render
+#from django.shortcuts import render
 from .models import * 
 from django.http import JsonResponse, HttpResponse
 import urllib
@@ -83,8 +83,8 @@ def contact_form_send(request):
             'mafstroygarant@mail.ru',
             # EMAIL_HOST_USER,
             [
-            #'maf.stroy1@gmail.com',
-            'worlddelete0@yandex.ru'
+            'maf.stroy1@gmail.com',
+            #'worlddelete0@yandex.ru'
             ],
             html_message = html_email
             )
